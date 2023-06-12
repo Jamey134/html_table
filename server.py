@@ -1,4 +1,4 @@
-from flask import Flask, rendering_template 
+from flask import Flask, render_template 
 app = Flask(__name__)   
 
 @app.route('/')      
@@ -12,7 +12,7 @@ def render_lists():
     {'first_name' : 'KB', 'last_name' : 'Tonel'}
 ]
 
-    return rendering_template('list.html', users = users)
+    return render_template('list.html', users = users)
 
 
 

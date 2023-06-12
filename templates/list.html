@@ -10,7 +10,7 @@
 <body>
     <table class="user_table" >
         <thead class="thead-dark">
-            <tr>
+            <tr style="color: rgb(228,173,31);">
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
                 <th scope="col">Full Name</th>
@@ -22,7 +22,7 @@
             <tr>
                 <td>{{user['first_name']}}</td>
                 <td>{{user['last_name']}}</td>
-                <td>{{user['first_name', 'last_name']}}</td>
+                <td>{{user['first_name']}} {{user['last_name']}}</td>
             </tr>
             {%endfor%}
         </tbody>
